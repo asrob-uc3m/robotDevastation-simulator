@@ -28,5 +28,8 @@ file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/install)
 install(DIRECTORY ${CMAKE_BINARY_DIR}/install/
         DESTINATION ${CMAKE_INSTALL_PREFIX})
 
+include(GNUInstallDirs)
+install(PROGRAMS scripts/python/rdSim DESTINATION ${CMAKE_INSTALL_BINDIR})
+
 # Configure and create uninstall target.
 include(AddUninstallTarget)
