@@ -10,7 +10,6 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake
                               ${CMAKE_SOURCE_DIR}/cmake/ycm-modules)
 
 # Bootstrap YCM. Keep YCM compatible with cmake_minimum_required().
-set(YCM_TAG v0.8.1)
 include(YCMBootstrap)
 
 # Superbuild phase.
