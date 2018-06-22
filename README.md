@@ -3,7 +3,7 @@
 [![Build Status (Linux/OSX)](https://travis-ci.org/asrob-uc3m/robotDevastation-simulator.svg?branch=develop)](https://travis-ci.org/asrob-uc3m/robotDevastation-simulator)
 [![Issues](https://img.shields.io/github/issues/asrob-uc3m/robotDevastation-simulator.svg?label=issues)](https://github.com/asrob-uc3m/robotDevastation-simulator/issues)
 
-[Robot Devastation simulator](http://asrob-uc3m.github.io/workgroups/2017-05-28-robot-devastation.html): super/meta repository.
+[Robot Devastation](http://asrob-uc3m.github.io/workgroups/2017-05-28-robot-devastation.html) simulator: super/meta repository.
 
 ## Installation
 
