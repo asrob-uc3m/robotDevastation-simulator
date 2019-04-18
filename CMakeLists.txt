@@ -9,6 +9,12 @@ project(RD_SIMULATOR LANGUAGES NONE)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake
                               ${CMAKE_SOURCE_DIR}/cmake/ycm-modules)
 
+# Find this YCM version on system, bootstrap it if not available.
+set(YCM_MINIMUM_VERSION 0.10)
+
+#Uses YCM's unmerged ExternalProject.cmake module.
+set(YCM_USE_CMAKE_PROPOSED ON)
+
 # Bootstrap YCM. Keep YCM compatible with cmake_minimum_required().
 include(YCMBootstrap)
 
@@ -19,13 +25,6 @@ include(FindOrBuildPackage)
 find_or_build_package(ASROB_YARP_DEVICES)
 find_or_build_package(RD_OPENRAVE_MODELS)
 find_or_build_package(ROBOTICSLAB_OPENRAVE_YARP_PLUGINS)
-
-# Prepare install/ directory (might be empty).
-file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/install)
-
-# Install downloaded packages.
-install(DIRECTORY ${CMAKE_BINARY_DIR}/install/
-        DESTINATION ${CMAKE_INSTALL_PREFIX})
 
 include(GNUInstallDirs)
 install(PROGRAMS scripts/python/rdSim DESTINATION ${CMAKE_INSTALL_BINDIR})
