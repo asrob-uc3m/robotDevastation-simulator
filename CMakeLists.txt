@@ -26,13 +26,6 @@ find_or_build_package(ASROB_YARP_DEVICES)
 find_or_build_package(RD_OPENRAVE_MODELS)
 find_or_build_package(ROBOTICSLAB_OPENRAVE_YARP_PLUGINS)
 
-# Prepare install/ directory (might be empty).
-file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/install)
-
-# Install downloaded packages.
-install(DIRECTORY ${CMAKE_BINARY_DIR}/install/
-        DESTINATION ${CMAKE_INSTALL_PREFIX})
-
 include(GNUInstallDirs)
 install(PROGRAMS scripts/python/rdSim DESTINATION ${CMAKE_INSTALL_BINDIR})
 
