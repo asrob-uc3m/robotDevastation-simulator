@@ -22,14 +22,9 @@ branches:
   except:
   - /^.*appveyor.*$/
 
-before_install:
-  #-- Configure Git (needed by YCM)
-  - if [ ! `git config --get user.email` ]; then `git config --global user.email 'user@example.com'`; fi
-  - if [ ! `git config --get user.name` ]; then `git config --global user.name 'Travis CI'`; fi
-
 before_script:
   - mkdir build && cd "$_"
-  - cmake .. -DCMAKE_INSTALL_PREFIX="$PWD/install-system"
+  - cmake .. -DCMAKE_INSTALL_PREFIX="$PWD/install-system" -DNON_INTERACTIVE_BUILD=ON
 
 script:
   - make install
