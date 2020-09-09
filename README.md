@@ -1,6 +1,6 @@
 [![Robot Devastation Homepage](https://img.shields.io/badge/robotDevastation-simulator-orange.svg)](http://asrob-uc3m.github.io/workgroups/2017-05-28-robot-devastation.html)
 [![Latest Release](https://img.shields.io/github/release/asrob-uc3m/robotDevastation-simulator.svg?label=latest%20release)](https://github.com/asrob-uc3m/robotDevastation-simulator/tags)
-[![Build Status (Linux/OSX)](https://travis-ci.org/asrob-uc3m/robotDevastation-simulator.svg?branch=develop)](https://travis-ci.org/asrob-uc3m/robotDevastation-simulator)
+[![Build Status (Linux)](https://travis-ci.com/asrob-uc3m/robotDevastation-simulator.svg?branch=develop)](https://travis-ci.com/asrob-uc3m/robotDevastation-simulator)
 [![Issues](https://img.shields.io/github/issues/asrob-uc3m/robotDevastation-simulator.svg?label=issues)](https://github.com/asrob-uc3m/robotDevastation-simulator/issues)
 
 [Robot Devastation](http://asrob-uc3m.github.io/workgroups/2017-05-28-robot-devastation.html) simulator: super/meta repository.
