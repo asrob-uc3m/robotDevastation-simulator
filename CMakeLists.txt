@@ -1,16 +1,15 @@
 # CopyPolicy: released under the terms of the LGPLv2.1, see LICENSE at project root.
 # URL: https://github.com/asrob-uc3m/robotDevastation-simulator
 
-cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.12)
 
 project(RD_SIMULATOR LANGUAGES NONE)
 
 # Pick up our CMake modules.
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake
-                              ${CMAKE_SOURCE_DIR}/cmake/ycm-modules)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/ycm-modules)
 
 # Find this YCM version on system, bootstrap it if not available.
-set(YCM_MINIMUM_VERSION 0.10)
+set(YCM_MINIMUM_VERSION 0.12)
 
 #Uses YCM's unmerged ExternalProject.cmake module.
 set(YCM_USE_CMAKE_PROPOSED ON)
